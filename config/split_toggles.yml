@@ -1,0 +1,10 @@
+- FLAG1:
+    treatment: 'on'
+    keys: ['ACT-123'] # account external ids.
+    config: {'desc': 'this applies only to ON and only for ACT-123. The rest will receive OFF'}
+- FLAG2:
+    treatment: 'on'
+    config: {'desc': 'on for all accounts in dev env.'}
+- FLAG3:
+    treatment: 'on'
+    config: {'desc': 'on for all accounts in dev env.'}
