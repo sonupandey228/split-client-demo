@@ -46,9 +46,7 @@ module Toggle
         metrics_refresh_rate: 360,
         impressions_refresh_rate: 360,
         events_push_rate: 360,
-        # to enable more verbose logging, including more debug information
         debug_enabled: false,
-        # to log transport data (mostly http requests, false is the default)
         transport_debug_enabled: false,
         ip_addresses_enabled: false,
         logger: SplitLogger,
@@ -57,7 +55,7 @@ module Toggle
     end
   end
 
-  # Logs to chatonce logger in production mode else log to console
+  # Logs 
   class SplitLogger
     class << self
       def debug(message)
